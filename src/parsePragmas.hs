@@ -1,6 +1,9 @@
 import Data.List 
 import Data.List.Split
 
+-- motivating use case 
+-- https://haskell-beam.github.io/beam/tutorials/tutorial1/
+
 cleanPragmasData = "-XDeriveGeneric -XGADTs -XOverloadedStrings -XFlexibleContexts -XFlexibleInstances -XTypeFamilies -XTypeApplications -XDeriveAnyClass"
 dirtyPragmasData = "> :set -XDeriveGeneric -XGADTs -XOverloadedStrings -XFlexibleContexts -XFlexibleInstances -XTypeFamilies -XTypeApplications -XDeriveAnyClass"
 mapPragma pragmas = intercalate "," $ map ((\ x -> "{-# " ++ x ++ " #-}") . drop 1) (words pragmas)
