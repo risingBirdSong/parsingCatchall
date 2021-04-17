@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f7ded8881ec5fcb8ee158b40de1c7988d8caaa4f284885bd7c71edabdc93a8c9
+-- hash: 8b615f3f5f28ab238bfcafb199e74e91bcec3ca9c6a2036b0a0c07c9f7480f1d
 
 name:           myParsingPractice
 version:        0.1.0.0
@@ -27,7 +27,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Parsepragma
   other-modules:
       Paths_myParsingPractice
   hs-source-dirs:
